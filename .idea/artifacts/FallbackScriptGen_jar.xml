@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FallbackScriptGen:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FallbackScriptGen_jar</output-path>
+    <root id="archive" name="FallbackScriptGen.jar">
+      <element id="module-output" name="FallbackScriptGen" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-test.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jdbc-oracle.jar/jdbc-oracle.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

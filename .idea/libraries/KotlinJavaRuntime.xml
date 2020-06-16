@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="KotlinJavaRuntime">
+    <CLASSES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-test.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk7.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jdbc-oracle.jar/jdbc-oracle.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/docs" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-reflect-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-test-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk7-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

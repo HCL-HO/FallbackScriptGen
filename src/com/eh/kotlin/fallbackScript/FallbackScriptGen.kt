@@ -1,5 +1,7 @@
-package com.eh.kotlin
+package com.eh.kotlin.fallbackScript
 
+import com.eh.kotlin.db.ConnectionManager
+import com.eh.kotlin.UpdateModel
 import org.apache.commons.io.FileUtils
 import java.io.File
 import java.sql.ResultSet
@@ -9,12 +11,12 @@ import java.text.SimpleDateFormat
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
-class Main {
+class FallbackScriptGen {
 
     companion object {
-        private const val REG_SET_PARM = " set (.*?)where"
+        private const val REG_SET_PARM = " set (.*?)where "
         private const val REG_UPDAET_SQL = "update(.*?);"
-        private const val REG_TABLE = "update(.*?) set"
+        private const val REG_TABLE = "update(.*?) set "
         private const val REG_WHERE = "where(.*?);"
         @JvmStatic
         fun main(args: Array<String>) {
@@ -23,7 +25,7 @@ class Main {
                 return
             }
             val path = args[0]
-//            val path = "C:\\workspace\\Data_extraction_or_patch\\DMDIY\\invoiceid_update\\invoiceid_update.sql"
+//            val path = "C:\\workspace\\Data_extraction_or_patch\\Franker_Data_Patch\\Updating Franking Machine PF10865\\PF10865_Data_Patch.sql"
             genFallbackScript(path)
 //            ConnectionManager.query("select 1, 'TEST', sysdate from dual", ::handleRS)
         }
@@ -32,13 +34,21 @@ class Main {
          *  Generate Fallback Script from Update SQL and write file
          */
         private fun genFallbackScript(pathtoread: String) {
-            val SQLs = FileUtils.readFileToString(File(pathtoread), "UTF-8").toLowerCase();
-            val updateSQLs: Array<String> = getUpdateSQLs(SQLs)
-            val updateTableMap = getUpdateMap(updateSQLs)
-            val fallbackScript = getFallbackScript(updateTableMap)
+            val SQLs = FileUtils.readFileToString(File(pathtoread), "UTF-8")
+            val updateSQLs: Array<String> =
+                getUpdateSQLs(SQLs)
+            val updateTableMap =
+                getUpdateMap(updateSQLs)
+            val fallbackScript =
+                getFallbackScript(
+                    updateTableMap
+                )
             val pathToWrite =
                 File(pathtoread).parentFile.absolutePath + File.separator + File(pathtoread).nameWithoutExtension + "_fallback.sql"
             FileUtils.write(File(pathToWrite), fallbackScript, "UTF-8")
+            println("Update SQLs size${updateSQLs.size}")
+            println("Update Table Map size: ${updateTableMap.size}")
+            println("Fallback script:\n $fallbackScript")
             println("Created ${File(pathToWrite).absolutePath}")
         }
 
@@ -57,13 +67,18 @@ class Main {
                 }
                 val selectSQL = "select $selectParm from ${model.table} where ${model.whereClause}"
                 println("selectSQL: $selectSQL")
-                val fallbackSQLFormat = "update ${model.table} set %s where ${model.whereClause};"
+                val fallbackSQLFormat = "update${model.table} set %s where${model.whereClause};"
                 val fallbackSQL = ConnectionManager.query(selectSQL) { rs ->
                     var parms = ""
                     if (rs.next()) {
                         val meta = rs.metaData
                         for (x in 1..meta.columnCount) {
-                            val setParm: String = getSetParm(x, meta, rs)
+                            val setParm: String =
+                                getSetParm(
+                                    x,
+                                    meta,
+                                    rs
+                                )
                             parms += setParm
                             if (x < meta.columnCount) {
                                 parms += ","
@@ -101,9 +116,9 @@ class Main {
          */
         private fun getUpdateMap(updateSQLs: Array<String>): Array<UpdateModel> {
             var updateModels = arrayOf<UpdateModel>()
-            val patternTable = Pattern.compile(REG_TABLE)
-            val patternPARM = Pattern.compile(REG_SET_PARM)
-            val patternWhere = Pattern.compile(REG_WHERE)
+            val patternTable = Pattern.compile(REG_TABLE, Pattern.CASE_INSENSITIVE.or(Pattern.DOTALL))
+            val patternPARM = Pattern.compile(REG_SET_PARM, Pattern.CASE_INSENSITIVE.or(Pattern.DOTALL))
+            val patternWhere = Pattern.compile(REG_WHERE, Pattern.CASE_INSENSITIVE.or(Pattern.DOTALL))
 
             updateSQLs.forEach { sql ->
                 val mt: Matcher = patternTable.matcher(sql)
@@ -126,8 +141,15 @@ class Main {
                 println(parms)
                 println(where)
                 if (table.isNotEmpty() && parms.isNotEmpty() && where.isNotEmpty()) {
-                    val parmArray: Array<String> = getParmArray(parms)
-                    updateModels = updateModels.plus(UpdateModel(table, parmArray, where))
+                    val parmArray: Array<String> =
+                        getParmArray(parms)
+                    updateModels = updateModels.plus(
+                        UpdateModel(
+                            table,
+                            parmArray,
+                            where
+                        )
+                    )
                 }
             }
 
@@ -153,7 +175,8 @@ class Main {
          * Extract all update SQLs from plan text
          */
         private fun getUpdateSQLs(SQLs: String): Array<String> {
-            val pattern: Pattern = Pattern.compile(REG_UPDAET_SQL)
+//            println(SQLs)
+            val pattern: Pattern = Pattern.compile(REG_UPDAET_SQL, Pattern.CASE_INSENSITIVE.or(Pattern.DOTALL))
             val m: Matcher = pattern.matcher(SQLs)
             var result = arrayOf<String>()
             while (m.find()) {

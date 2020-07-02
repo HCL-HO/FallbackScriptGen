@@ -26,4 +26,5 @@ hs_err_pid*
 *.iml
 out/**
 
+**/DBInfo.kt
 DBInfo.kt

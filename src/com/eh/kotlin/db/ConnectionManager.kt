@@ -1,5 +1,6 @@
-package com.eh.kotlin
+package com.eh.kotlin.db
 
+import com.eh.kotlin.DBInfo
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet
@@ -26,7 +27,11 @@ class ConnectionManager {
         }
 
         fun connection(): Connection{
-            return DriverManager.getConnection(DB_URL,USER,PASS);
+            return DriverManager.getConnection(
+                DB_URL,
+                USER,
+                PASS
+            );
         }
 
         fun closeConnection(conn: Connection){

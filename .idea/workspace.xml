@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="275d8f47-07d2-46a9-8a4c-b18a01ded3fc" name="Default Changelist" comment="" />
+    <list default="true" id="275d8f47-07d2-46a9-8a4c-b18a01ded3fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/eh/kotlin/CommandHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/eh/kotlin/email/EmailUpdater.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/eh/kotlin/ConnectionManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eh/kotlin/db/ConnectionManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/eh/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/eh/kotlin/fallbackScript/FallbackScriptGen.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,13 +28,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/ConnectionManager.kt">
+        <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/CommandHelper.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-222">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding>
-                <element signature="e#23#105#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="143">
+              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/db/ConnectionManager.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -41,22 +55,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/Main.kt">
+        <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/email/EmailUpdater.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-              <folding>
-                <element signature="e#23#239#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="485">
+              <caret line="142" selection-start-line="142" selection-end-line="142" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_07/src.zip!/java/sql/Types.java">
+        <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/fallbackScript/FallbackScriptGen.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="118" column="39" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="39" />
+            <state relative-caret-position="76">
+              <caret line="70" column="31" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -76,18 +87,24 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>in</find>
-      <find>in</find>
       <find>Found value:</find>
       <find>selectSQL:</find>
+      <find>compi</find>
+      <find>\n</find>
+      <find>EFFECTIVE DATE:</find>
+      <find>ATSS-APPLICATION-Admin.Support@axa-tech.com</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -96,8 +113,19 @@
         <option value="$PROJECT_DIR$/src/com/eh/kotlin/DBInfo.kt" />
         <option value="$PROJECT_DIR$/src/com/eh/kotlin/ConnectionManager.kt" />
         <option value="$PROJECT_DIR$/src/com/eh/kotlin/Main.kt" />
+        <option value="$PROJECT_DIR$/src/com/eh/kotlin/FallbackScriptGen.kt" />
+        <option value="$PROJECT_DIR$/src/com/eh/kotlin/fallbackScript/FallbackScriptGen.kt" />
+        <option value="$PROJECT_DIR$/src/com/eh/kotlin/email/emailUpdater.kt" />
+        <option value="$PROJECT_DIR$/src/com/eh/kotlin/CommandHelper.kt" />
+        <option value="$PROJECT_DIR$/src/com/eh/kotlin/email/EmailUpdater.kt" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
@@ -110,62 +138,55 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="FallbackScriptGen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FallbackScriptGen" type="462c0819:PsiDirectoryNode" />
+              <item name="FallbackScriptGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallbackScriptGenerator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FallbackScriptGen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FallbackScriptGen" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FallbackScriptGen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FallbackScriptGen" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FallbackScriptGen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FallbackScriptGen" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="FallbackScriptGen_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FallbackScriptGen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FallbackScriptGen" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="gen_fallback_sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FallbackScriptGen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FallbackScriptGen" type="462c0819:PsiDirectoryNode" />
+              <item name="FallbackScriptGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallbackScriptGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FallbackScriptGen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FallbackScriptGen" type="462c0819:PsiDirectoryNode" />
+              <item name="FallbackScriptGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallbackScriptGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallbackScriptGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallbackScriptGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="fallbackScript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21973929" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.eh.kotlin.db" />
+      <recent name="com.eh.kotlin.fallbackScript" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -179,15 +200,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="com.eh.kotlin.Main" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.com.eh.kotlin.email.EmailUpdater">
+    <configuration name="com.eh.kotlin.FallbackScriptGen" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="FallbackScriptGen" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.eh.kotlin.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.eh.kotlin.FallbackScriptGen" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.eh.kotlin.email.EmailUpdater" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="FallbackScriptGen" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.eh.kotlin.email.EmailUpdater" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,7 +229,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.com.eh.kotlin.Main" />
+        <item itemvalue="Kotlin.com.eh.kotlin.email.EmailUpdater" />
+        <item itemvalue="Kotlin.com.eh.kotlin.FallbackScriptGen" />
       </list>
     </recent_temporary>
   </component>
@@ -214,9 +249,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25809062" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17313915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -225,23 +259,23 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.455594" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30565166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.7243368" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3252595" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.5294118" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.20299885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.32928804" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -273,13 +307,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/META-INF/MANIFEST.MF" />
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/io/files/Utils.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_07/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="857" column="28" selection-start-line="857" selection-start-column="28" selection-end-line="857" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_07/src.zip!/java/sql/Types.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="118" column="39" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar!/org/apache/commons/io/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="296" column="18" selection-start-line="296" selection-start-column="18" selection-end-line="296" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/RequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/ipss/src/hk/gov/hkpo/ipss/filter/RequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="36" column="78" lean-forward="true" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -290,10 +353,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_07/src.zip!/java/sql/Types.java">
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Collections.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="118" column="39" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="39" />
+        <state relative-caret-position="184">
+          <caret line="2328" column="63" selection-start-line="2328" selection-start-column="51" selection-end-line="2328" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -304,23 +367,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/ConnectionManager.kt">
+    <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/db/ConnectionManager.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#23#105#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="19">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/Main.kt">
+    <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/CommandHelper.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-          <folding>
-            <element signature="e#23#239#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="143">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_07/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="3263" column="11" selection-start-line="3263" selection-start-column="11" selection-end-line="3263" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/fallbackScript/FallbackScriptGen.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="70" column="31" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eh/kotlin/email/EmailUpdater.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>

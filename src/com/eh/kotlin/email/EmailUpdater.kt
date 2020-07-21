@@ -1,9 +1,8 @@
 package com.eh.kotlin.email
 
-import com.eh.kotlin.CommandHelper
+import com.eh.kotlin.commandhelperkt.CommandHelper
 import com.eh.kotlin.db.ConnectionManager
 import java.lang.StringBuilder
-import java.util.*
 import java.util.regex.Pattern
 import kotlin.collections.ArrayList
 import kotlin.collections.HashSet
@@ -12,7 +11,8 @@ import kotlin.collections.HashSet
 class EmailUpdater {
 
     companion object {
-        private const val REG_SET_PARM = "(\\S*?)@(.*?)($|(?=;))"
+//        private const val REG_SET_PARM = "(\\S*?)@(.*?)($|(?=;))"
+        private const val REG_SET_PARM = "((\\S*?)@(.*?)(\$|(?=;)|(?= ))|(.*?)/HKSARG)"
         private const val MSG_CHOOSE_ADD = "Choose ADD Emails: "
         private const val MSG_CHOOSE_DELETE = "Choose DEL Emails: "
         private const val MSG_CHOOSE_Types = "Choose Types: "
@@ -34,13 +34,12 @@ class EmailUpdater {
             "Reminder of Changing SFTP Account Password of Hongkong Post PayThruPost Service"
         )
 
+        val emailsContent =" \"Cathy YL TSE/WSD/HKSARG@WSD, Sylvia WS LEUNG/WSD/HKSARG@WSD, CO LEUNG/WSD/HKSARG@WSD \"\n"
+
         @JvmStatic
         fun main(args: Array<String>) {
             val noOfReqest = CommandHelper.waitNumber("Number of Request: ", 1)
             val requests: MutableList<Request> = ArrayList<Request>()
-
-            val emailsContent = CommandHelper.waitInput("Please paste the email content: ")
-
             for (x in 1..noOfReqest) {
                 val mails = getEmails(emailsContent)
                 println(MSG_CHOOSE_Types)

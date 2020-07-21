@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/com/eh/kotlin/EHKtCommandHelper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/com/eh/kotlin/command" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/com/eh/kotlin/commandhelperkt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/com/eh/kotlin/db" vcs="Git" />
   </component>
 </project>
